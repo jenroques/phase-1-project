@@ -24,33 +24,16 @@ window.addEventListener('DOMContentLoaded', (e) => {
 // Standalone Functions
 
     //Fetch 
-fetch ('https://acnhapi.com/v1a/')
+fetch ('https://acnhapi.com/v1/villagers')
 .then(resp => resp.json())
-.then((villagers) => {
-    villagers.forEach((villager))
+.then(console.log)
+  //  villager.forEach((villager) => {
+  //      villagerContainer.append(renderVillager(villager))
+  //  })
 })
 
 
 
-function renderVillager(villager) {
-    let card = document.createElement('li')
-    card.className = 'card'
-    card.innerHTML = `
-     <img src="${villager.image_uri}">
-     <div class="content">
-        <h3>${villager.name-USen}</h3>
-        <h4>${villager.personality}
-        <p>${villager.saying}</p> 
-    </div>`
-
-    document.querySelector('#villager-list').append(card)
-}
-
-function render() {
-    villagers.forEach(villager => renderVillager(villager))
-    }
-    render()
-}
 
     //Search through json? 
 
@@ -75,23 +58,3 @@ function render() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-})
