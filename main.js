@@ -24,33 +24,58 @@ window.addEventListener('DOMContentLoaded', (e) => {
 // Standalone Functions
 
     //Fetch 
-function getVillagers() {
-fetch ('https://acnhapi.com/v1a/villagers')
+fetch (`http://localhost:3000/villagers/?_limit=30&_=${pageNum}`)
 .then(resp => resp.json())
 .then((villagerData) => {  
-    villagerData.forEach((villager) => {
-    villagerContainer.append(renderVillagers(villager)) 
+   
+    villagerData.forEach((villagers) => {
+    villagerContainer.append(renderVillagers(villagers), document.createElement ("hr"))
+     })
     })
+
+
+backButton.addEventListener("click", () => {
+    if(pageNum === 1){
+        window.alert("At End of List")
+    } else {
+    pageNum -= 1
+    fetch (`http://localhost:3000/villagers/?_limit=30&_=${pageNum}`)
+    .then(resp => resp.json())
+    .then((villagerData) => {
+    villagerData.forEach((villagers) => {
+        villagerContainer.innerHTML= `<p>Page ${pageNum}</p>`;
+        villagerContainer.append(renderVillagers(villagers), document.createElement("hr"))
+     })  
+   })
+  }
 })
 
-// Append cards to DOM 
 
-function renderVillagers(villager) {
-    let card = document.createElement('li')
-    card.innerHTML = `
-         <img src="${villager.image_uri}">
-         
-     `
-        card.setAttribute("data-id", villager.id)
-        card.style.color = "#c48d3f"
+forwardButton.addEventListener("click", () => {
+    if(pageNum === 20){
+        window.alert("At End of List")
+    } else {
+    pageNum += 1
+    fetch (`http://localhost:3000/villagers/?_limit=30&_=${pageNum}`)
+    .then(resp => resp.json())
+    .then((villagerData) => {
+    villagerData.forEach((villagers) => {
+        villagerContainer.innerHTML= `<p>Page ${pageNum}</p>`;
+        villagerContainer.append(renderVillagers(villagers), document.createElement("hr"))
+     })  
+   })
+  }
+})
 
-    return card
-   }
 
-/*function render() {
-    getVillagers()
-}*/
-    //Search through json? 
-
-}
+function renderVillagers(villagers) {
+    const villagerSpan = document.createElement("span")
+    villagerSpan.innerHTML = `
+        <img src="${villagers.image_uri}">
+        <h3>${villagers.name}</h3>
+        <h4>${villagers.saying}</h4>
+    `
+    villagerSpan.setAttribute("data-id", villagers.id)
+    return villagerSpan
+ }
 })
