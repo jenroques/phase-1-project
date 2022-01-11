@@ -1,9 +1,24 @@
 { 
-  "villagers" : [ 
-    {
+  "villagers": [
+   {
     "id": 1,
-    "file-name": "ant00", 
-    "name": "Cyrano", 
+    "file-name": "ant00",
+    "name": {
+      "name-USen": "Cyrano",
+      "name-EUen": "Cyrano",
+      "name-EUde": "Theo",
+      "name-EUes": "Cirano",
+      "name-USes": "Cirano",
+      "name-EUfr": "Cyrano",
+      "name-USfr": "Cyrano",
+      "name-EUit": "Cirano",
+      "name-EUnl": "Cyrano",
+      "name-CNzh": "阳明",
+      "name-TWzh": "陽明",
+      "name-JPja": "さくらじま",
+      "name-KRko": "사지마",
+      "name-EUru": "Сирано"
+    },
     "personality": "Cranky",
     "birthday-string": "March 9th",
     "birthday": "9/3",
@@ -32,12 +47,27 @@
       "catch-JPja": "でごわす",
       "catch-KRko": "임돠",
       "catch-EUru": "апчхи"
-    } 
+    }
   },
-    {
+   {
     "id": 2,
     "file-name": "ant01",
-    "name": "Antonio",
+    "name": {
+      "name-USen": "Antonio",
+      "name-EUen": "Antonio",
+      "name-EUde": "Siggi",
+      "name-EUes": "Antonio",
+      "name-USes": "Antonio",
+      "name-EUfr": "Antonio",
+      "name-USfr": "Antonio",
+      "name-EUit": "Antonio",
+      "name-EUnl": "Antonio",
+      "name-CNzh": "阿诚",
+      "name-TWzh": "阿誠",
+      "name-JPja": "マコト",
+      "name-KRko": "퍼머거",
+      "name-EUru": "Антонио"
+    },
     "personality": "Jock",
     "birthday-string": "October 20th",
     "birthday": "20/10",
@@ -68,10 +98,25 @@
       "catch-EUru": "го-го-го"
     }
   },
-      {
+  {
     "id": 3,
     "file-name": "ant02",
-    "name": "Pango",
+    "name": {
+      "name-USen": "Pango",
+      "name-EUen": "Pango",
+      "name-EUde": "Mathilda",
+      "name-EUes": "Aspidora",
+      "name-USes": "Aspidora",
+      "name-EUfr": "Mathilda",
+      "name-USfr": "Mathilda",
+      "name-EUit": "Carlotta",
+      "name-EUnl": "Pango",
+      "name-CNzh": "佩希",
+      "name-TWzh": "佩希",
+      "name-JPja": "パトラ",
+      "name-KRko": "패트라",
+      "name-EUru": "Панго"
+    },
     "personality": "Peppy",
     "birthday-string": "November 9th",
     "birthday": "9/11",
@@ -101,11 +146,26 @@
       "catch-KRko": "라지요",
       "catch-EUru": "снуф-снуф"
     }
-      },
+  },
    {
     "id": 4,
     "file-name": "ant03",
-    "name": "Anabelle",
+    "name": {
+      "name-USen": "Anabelle",
+      "name-EUen": "Anabelle",
+      "name-EUde": "Annabell",
+      "name-EUes": "Anabel",
+      "name-USes": "Anabel",
+      "name-EUfr": "Anabelle",
+      "name-USfr": "Anabelle",
+      "name-EUit": "Annalisa",
+      "name-EUnl": "Anabelle",
+      "name-CNzh": "有美",
+      "name-TWzh": "有美",
+      "name-JPja": "あるみ",
+      "name-KRko": "아롱이",
+      "name-EUru": "Анабель"
+    },
     "personality": "Peppy",
     "birthday-string": "February 16th",
     "birthday": "16/2",
@@ -136,10 +196,25 @@
       "catch-EUru": "хрум-хрум"
     }
   },
-   {
+  {
     "id": 5,
     "file-name": "ant06",
-    "name": "Snooty", 
+    "name": {
+      "name-USen": "Snooty",
+      "name-EUen": "Snooty",
+      "name-EUde": "Hilde",
+      "name-EUes": "Rosanari",
+      "name-USes": "Rosanari",
+      "name-EUfr": "Tarina",
+      "name-USfr": "Tarina",
+      "name-EUit": "Lucrezia",
+      "name-EUnl": "Snooty",
+      "name-CNzh": "贵妃",
+      "name-TWzh": "貴妃",
+      "name-JPja": "こまち",
+      "name-KRko": "스누티",
+      "name-EUru": "Снути"
+    },
     "personality": "Snooty",
     "birthday-string": "October 24th",
     "birthday": "24/10",
@@ -173,7 +248,22 @@
   {
     "id": 6,
     "file-name": "ant08",
-    "name": "Annalisa",
+    "name": {
+      "name-USen": "Annalisa",
+      "name-EUen": "Annalisa",
+      "name-EUde": "Annalena",
+      "name-EUes": "Alba",
+      "name-USes": "Alba",
+      "name-EUfr": "Roberta",
+      "name-USfr": "Roberta",
+      "name-EUit": "Anita",
+      "name-EUnl": "Annalisa",
+      "name-CNzh": "小雅",
+      "name-TWzh": "小雅",
+      "name-JPja": "みやび",
+      "name-KRko": "설백",
+      "name-EUru": "Аннализа"
+    },
     "personality": "Normal",
     "birthday-string": "February 6th",
     "birthday": "6/2",
@@ -207,7 +297,22 @@
    {
     "id": 7,
     "file-name": "ant09",
-    "name": "Olaf",
+    "name": {
+      "name-USen": "Olaf",
+      "name-EUen": "Olaf",
+      "name-EUde": "Olaf",
+      "name-EUes": "Olaf",
+      "name-USes": "Olaf",
+      "name-EUfr": "Blair",
+      "name-USfr": "Blair",
+      "name-EUit": "Ettore",
+      "name-EUnl": "Olaf",
+      "name-CNzh": "安东尼",
+      "name-TWzh": "安東尼",
+      "name-JPja": "アントニオ",
+      "name-KRko": "안토니오",
+      "name-EUru": "Олаф"
+    },
     "personality": "Smug",
     "birthday-string": "May 19th",
     "birthday": "19/5",
@@ -238,10 +343,25 @@
       "catch-EUru": "уф-уф"
     }
   },
-  {
+   {
     "id": 8,
     "file-name": "bea00",
-    "name": "Teddy",
+    "name": {
+      "name-USen": "Teddy",
+      "name-EUen": "Teddy",
+      "name-EUde": "Torsten",
+      "name-EUes": "Teddy",
+      "name-USes": "Teddy",
+      "name-EUfr": "Teddy",
+      "name-USfr": "Teddy",
+      "name-EUit": "Teddy",
+      "name-EUnl": "Teddy",
+      "name-CNzh": "太平",
+      "name-TWzh": "太平",
+      "name-JPja": "たいへいた",
+      "name-KRko": "병태",
+      "name-EUru": "Тедди"
+    },
     "personality": "Jock",
     "birthday-string": "September 26th",
     "birthday": "26/9",
@@ -272,10 +392,25 @@
       "catch-EUru": "быр-быр"
     }
   },
-   {
+  {
     "id": 9,
     "file-name": "bea01",
-    "name": "Pinky", 
+    "name": {
+      "name-USen": "Pinky",
+      "name-EUen": "Pinky",
+      "name-EUde": "Pia",
+      "name-EUes": "Violeta",
+      "name-USes": "Violeta",
+      "name-EUfr": "Rosine",
+      "name-USfr": "Rosine",
+      "name-EUit": "Pinky",
+      "name-EUnl": "Pinky",
+      "name-CNzh": "丹丹",
+      "name-TWzh": "丹丹",
+      "name-JPja": "タンタン",
+      "name-KRko": "링링",
+      "name-EUru": "Пинки"
+    },
     "personality": "Peppy",
     "birthday-string": "September 9th",
     "birthday": "9/9",
@@ -309,7 +444,22 @@
    {
     "id": 10,
     "file-name": "bea02",
-    "name": "Curt", 
+    "name": {
+      "name-USen": "Curt",
+      "name-EUen": "Curt",
+      "name-EUde": "Kurt",
+      "name-EUes": "Gorbaché",
+      "name-USes": "Gorbaché",
+      "name-EUfr": "Curt",
+      "name-USfr": "Curt",
+      "name-EUit": "Curt",
+      "name-EUnl": "Curt",
+      "name-CNzh": "铁熊",
+      "name-TWzh": "鐵熊",
+      "name-JPja": "ガンテツ",
+      "name-KRko": "뚝심",
+      "name-EUru": "Керт"
+    },
     "personality": "Cranky",
     "birthday-string": "July 1st",
     "birthday": "1/7",
@@ -343,7 +493,22 @@
    {
     "id": 11,
     "file-name": "bea03",
-    "name": "Chow", 
+    "name": {
+      "name-USen": "Chow",
+      "name-EUen": "Chow",
+      "name-EUde": "Chang",
+      "name-EUes": "Pando",
+      "name-USes": "Pando",
+      "name-EUfr": "Chulin",
+      "name-USfr": "Chulin",
+      "name-EUit": "Chowchow",
+      "name-EUnl": "Chow",
+      "name-CNzh": "朝阳",
+      "name-TWzh": "朝陽",
+      "name-JPja": "チャウヤン",
+      "name-KRko": "츄양",
+      "name-EUru": "Чау"
+    },
     "personality": "Cranky",
     "birthday-string": "July 22nd",
     "birthday": "22/7",
@@ -377,7 +542,22 @@
    {
     "id": 12,
     "file-name": "bea05",
-    "name": "Nate",
+    "name": {
+      "name-USen": "Nate",
+      "name-EUen": "Nate",
+      "name-EUde": "Nathan",
+      "name-EUes": "Nachete",
+      "name-USes": "Nachete",
+      "name-EUfr": "Nathan",
+      "name-USfr": "Nathan",
+      "name-EUit": "Gianni",
+      "name-EUnl": "Nate",
+      "name-CNzh": "巴克思",
+      "name-TWzh": "巴克思",
+      "name-JPja": "バッカス",
+      "name-KRko": "박하스",
+      "name-EUru": "Нэйт"
+    },
     "personality": "Lazy",
     "birthday-string": "August 16th",
     "birthday": "16/8",
@@ -411,7 +591,22 @@
    {
     "id": 13,
     "file-name": "bea06",
-    "name": "Groucho",
+    "name": {
+      "name-USen": "Groucho",
+      "name-EUen": "Groucho",
+      "name-EUde": "Ernst",
+      "name-EUes": "Groucho",
+      "name-USes": "Groucho",
+      "name-EUfr": "Ronchon",
+      "name-USfr": "Ronchon",
+      "name-EUit": "Groucho",
+      "name-EUnl": "Groucho",
+      "name-CNzh": "爪爪",
+      "name-TWzh": "爪爪",
+      "name-JPja": "クロー",
+      "name-KRko": "거무틱",
+      "name-EUru": "Граучо"
+    },
     "personality": "Cranky",
     "birthday-string": "October 23rd",
     "birthday": "23/10",
@@ -491,7 +686,7 @@
       "catch-EUru": "ме-е-ед"
     }
   },
-  "bea08": {
+   {
     "id": 15,
     "file-name": "bea08",
     "name": {
@@ -540,7 +735,7 @@
       "catch-EUru": "гррум"
     }
   },
-  "bea09": {
+   {
     "id": 16,
     "file-name": "bea09",
     "name": {
@@ -589,7 +784,7 @@
       "catch-EUru": "грр"
     }
   },
-  "bea10": {
+   {
     "id": 17,
     "file-name": "bea10",
     "name": {
@@ -638,7 +833,7 @@
       "catch-EUru": "йодль"
     }
   },
-  "bea11": {
+   {
     "id": 18,
     "file-name": "bea11",
     "name": {
@@ -687,7 +882,7 @@
       "catch-EUru": "гарр-сон"
     }
   },
-  "bea12": {
+   {
     "id": 19,
     "file-name": "bea12",
     "name": {
@@ -736,7 +931,7 @@
       "catch-EUru": "ого-го"
     }
   },
-  "bea13": {
+  {
     "id": 20,
     "file-name": "bea13",
     "name": {
@@ -18964,6 +19159,4 @@
       "catch-EUru": "фокстрот"
     }
   }
-} 
-  ]}
-
+} ]

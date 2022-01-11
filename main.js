@@ -27,11 +27,12 @@ window.addEventListener('DOMContentLoaded', (e) => {
 fetch (`http://localhost:3000/villagers/?_limit=30&_=${pageNum}`)
 .then(resp => resp.json())
 .then((villagerData) => {  
-   
-    villagerData.forEach((villagers) => {
-    villagerContainer.append(renderVillagers(villagers), document.createElement ("hr"))
+ 
+    villagerData.forEach((villagerData) => {
+    villagerContainer.append(renderVillagers(villagerData), document.createElement ("hr"))
      })
     })
+    
 
 
 backButton.addEventListener("click", () => {
@@ -71,7 +72,7 @@ forwardButton.addEventListener("click", () => {
 function renderVillagers(villagers) {
     const villagerSpan = document.createElement("span")
     villagerSpan.innerHTML = `
-        <img src="${villagers.image_uri}">
+        <img src="${villagers.image_uri}" alt=${villagers.name} class="center">
         <h3>${villagers.name}</h3>
         <h4>${villagers.saying}</h4>
     `
