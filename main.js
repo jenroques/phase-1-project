@@ -1,11 +1,11 @@
 window.addEventListener('DOMContentLoaded', (e) => {
-    const villagerContainer = document.getElementById('villager-container')
+    const villagerContainer = document.getElementById('villager-list')
     const fullHeart = '♥'
     const emptyHeart = '♡'
     const backButton = document.getElementById('back')
     const forwardButton = document.getElementById('forward')
     let pageNum = 1
-
+    
 
 // Declare variables 
 
@@ -24,37 +24,33 @@ window.addEventListener('DOMContentLoaded', (e) => {
 // Standalone Functions
 
     //Fetch 
-fetch ('https://acnhapi.com/v1/villagers')
+function getVillagers() {
+fetch ('https://acnhapi.com/v1a/villagers')
 .then(resp => resp.json())
-.then(console.log)
-  //  villager.forEach((villager) => {
-  //      villagerContainer.append(renderVillager(villager))
-  //  })
+.then((villagerData) => {  
+    villagerData.forEach((villager) => {
+    villagerContainer.append(renderVillagers(villager)) 
+    })
 })
 
+// Append cards to DOM 
 
+function renderVillagers(villager) {
+    let card = document.createElement('li')
+    card.innerHTML = `
+         <img src="${villager.image_uri}">
+         
+     `
+        card.setAttribute("data-id", villager.id)
+        card.style.color = "#c48d3f"
 
+    return card
+   }
 
+/*function render() {
+    getVillagers()
+}*/
     //Search through json? 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+})

@@ -1,25 +1,61 @@
-body {
-    background-color: #fffffa;
-  }
 
-  h1 {
-    color: black;
-    text-align: center;
-    font-family: verdana;
-  }
-
-  p {
-    text-align: center;
-    font-family: verdana;
-    font-size: 20px;
-  }
-
-  hr { 
-    border-width: 5px;
-    border-color: #9dffb0 ;
-  } 
 
   .activated-heart {
     color: #81f1f7;
   }
+
+
+h1
+{
+  text-align: center;
+  font-family: Verdana;
+}
+
+h4 {
+  margin: 0;
+}
+
+buttons {
+  align-items: center;
+}
+
+material-dialog header {
+  background-color: #c17925;
+  color: #fffbf7;
+  padding: 16px 24px 0 !important;
+}
+
+material-dialog main,
+material-dialog footer {
+  background-color: #fffed4;
+}
+
+material-dialog {
+  border-radius: 8px !important;
+}
+
+material-dialog.green header {
+  background-color: #28735a;
+}
+
+material-dialog.green main {
+  background-color: #2ead82;
+  padding: 0;
+}
+
+material-dialog.green footer {
+  background-color: #53dcae;
+}
+
+material-dialog.green main.with-scroll-strokes {
+  border-bottom: 0px #28735a solid;
+  border-top: 0px transparent solid;
+}
+
+material-dialog footer {
+  padding: 8px !important;
+}
+
+
+
 
