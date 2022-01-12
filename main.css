@@ -42,7 +42,7 @@ h4 {
   color: #28735a ;
 }
 
-div.card img {
+div.container img {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
@@ -53,49 +53,13 @@ div.card img {
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
-div.card {
+div.container {
   border-radius: 5px 5px 0 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-material-dialog header {
-  background-color: #c17925;
-  color: #fffbf7;
-  padding: 16px 24px 0 !important;
-}
-
-material-dialog main,
-material-dialog footer {
-  background-color: #fffed4;
-}
-
-material-dialog {
-  border-radius: 8px !important;
-}
-
-material-dialog.green header {
-  background-color: #28735a;
-}
-
-material-dialog.green main {
-  background-color: #2ead82;
-  padding: 0;
-}
-
-material-dialog.green footer {
-  background-color: #53dcae;
-}
-
-material-dialog.green main.with-scroll-strokes {
-  border-bottom: 0px #28735a solid;
-  border-top: 0px transparent solid;
-}
-
-material-dialog footer {
-  padding: 8px !important;
-}
 
 
 

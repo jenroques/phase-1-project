@@ -1,7 +1,5 @@
 window.addEventListener('DOMContentLoaded', (e) => {
     const villagerContainer = document.getElementById('villager-list')
-    const fullHeart = '♥'
-    const emptyHeart = '♡'
     const backButton = document.getElementById('back')
     const forwardButton = document.getElementById('forward')
     let pageNum = 1
@@ -43,7 +41,6 @@ function renderVillagers(villagers) {
         <img src="${villagers.image_uri}">
         <h3>${villagers["name"]["name-USen"]}</h3>
         <h4>${villagers.saying}</h4>
-        <li class="like">Neighbor!<span class="like-glyph">&#x2661;</span></li>
     `
     villagerDiv.setAttribute("data-id", villagers.id)
     return villagerDiv
