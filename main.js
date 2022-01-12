@@ -1,7 +1,5 @@
 window.addEventListener('DOMContentLoaded', (e) => {
     const villagerContainer = document.getElementById('villager-list')
-    const backButton = document.getElementById('back')
-    const forwardButton = document.getElementById('forward')
     let pageNum = 1
     
 
