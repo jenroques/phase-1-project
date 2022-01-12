@@ -42,15 +42,22 @@ h4 {
   color: #28735a ;
 }
 
-.cards {
+div.card img {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
-img {
+div.card {
   border-radius: 5px 5px 0 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 material-dialog header {

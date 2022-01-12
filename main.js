@@ -24,57 +24,28 @@ window.addEventListener('DOMContentLoaded', (e) => {
 // Standalone Functions
 
     //Fetch 
-fetch (`http://localhost:3000/villagers/?_limit=30&_=${pageNum}`)
+fetch (`http://localhost:3000/villagers`)
 .then(resp => resp.json())
 .then((villagerData) => {  
- 
-    villagerData.forEach((villagerData) => {
-    villagerContainer.append(renderVillagers(villagerData), document.createElement ("br"))
+   
+    villagerData.forEach((villagers) => {
+    villagerContainer.append(renderVillagers(villagers), document.createElement ("hr"))
      })
     })
-    
 
 
-backButton.addEventListener("click", () => {
-    if(pageNum === 1){
-        window.alert("At End of List")
-    } else {
-    pageNum -= 1
-    fetch (`http://localhost:3000/villagers/?_limit=30&_=${pageNum}`)
-    .then(resp => resp.json())
-    .then((villagerData) => {
-    villagerData.forEach((villagers) => {
-        villagerContainer.append(renderVillagers(villagers), document.createElement("hr"))
-     })  
-   })
-  }
-})
 
-
-forwardButton.addEventListener("click", () => {
-    if(pageNum === 20){
-        window.alert("At End of List")
-    } else {
-    pageNum += 1
-    fetch (`http://localhost:3000/villagers/?_limit=30&_=${pageNum}`)
-    .then(resp => resp.json())
-    .then((villagerData) => {
-    villagerData.forEach((villagers) => {
-        villagerContainer.append(renderVillagers(villagers), document.createElement("hr"))
-     })  
-   })
-  }
-})
 
 
 function renderVillagers(villagers) {
-    const villagerSpan = document.createElement("span")
-    villagerSpan.innerHTML = `
-        <img src="${villagers.image_uri}" alt=${villagers.name} class="center">
-        <h3>${villagers.name}</h3>
+    const villagerDiv = document.createElement("div")
+    villagerDiv.innerHTML = `
+        <img src="${villagers.image_uri}">
+        <h3>${villagers["name"]["name-USen"]}</h3>
         <h4>${villagers.saying}</h4>
+        <li class="like">Neighbor!<span class="like-glyph">&#x2661;</span></li>
     `
-    villagerSpan.setAttribute("data-id", villagers.id)
-    return villagerSpan
+    villagerDiv.setAttribute("data-id", villagers.id)
+    return villagerDiv
  }
 })
