@@ -29,7 +29,7 @@ fetch (`http://localhost:3000/villagers/?_limit=30&_=${pageNum}`)
 .then((villagerData) => {  
  
     villagerData.forEach((villagerData) => {
-    villagerContainer.append(renderVillagers(villagerData), document.createElement ("hr"))
+    villagerContainer.append(renderVillagers(villagerData), document.createElement ("br"))
      })
     })
     
@@ -44,7 +44,6 @@ backButton.addEventListener("click", () => {
     .then(resp => resp.json())
     .then((villagerData) => {
     villagerData.forEach((villagers) => {
-        villagerContainer.innerHTML= `<p>Page ${pageNum}</p>`;
         villagerContainer.append(renderVillagers(villagers), document.createElement("hr"))
      })  
    })
@@ -61,7 +60,6 @@ forwardButton.addEventListener("click", () => {
     .then(resp => resp.json())
     .then((villagerData) => {
     villagerData.forEach((villagers) => {
-        villagerContainer.innerHTML= `<p>Page ${pageNum}</p>`;
         villagerContainer.append(renderVillagers(villagers), document.createElement("hr"))
      })  
    })
