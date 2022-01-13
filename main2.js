@@ -10,15 +10,16 @@ window.addEventListener('DOMContentLoaded', (e) => {
 // Event Listeners 
 
 forwardButton.addEventListener("click", () => {
-    console.log("Clicky!")
-
-
-
+    currentPage++
+    getAllVillagers(currentPage)
 })
 
 
 backButton.addEventListener("click", () => {
-    console.log("Back Click!")
+    if (currentPage > 1) {
+    currentPage--
+    getAllVillagers(currentPage)
+    }
 })
 
 
@@ -39,6 +40,7 @@ getAllVillagers(currentPage)
 //Render Helpers
 
 function renderAllVillagers(villagers) {
+    villagerContainer.innerHTML = ""
     villagers.forEach(renderVillager)
 }
 
