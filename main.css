@@ -1,37 +1,41 @@
 
-  body {
+body {
     color: #81f1f7 ;
-  }
+}
   
-  #content { 
+#content { 
     overflow: auto; 
-    width: 600px;
+    width: 700px;
     background: #81f1f7; 
     margin: auto;
-  } 
+} 
 
-  label, input {
+label, input {
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #28735a;
-  }
+}
 
-  label {
+label {
     margin-bottom: 10px;
     color: #28735a;
-  }
+}
 
-  input {
+input {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+}
 
-  #create-neighborhood {
+#create-neighborhood {
     width: 40%; 
     margin-top: 30px;
     float: right;
     display: block;
-  }
+}
+
+.activated-heart {
+  color: #fff563;
+}
 
 h1
 {
