@@ -9,14 +9,35 @@
   </head>
   <body>
     <h1>ACNH Neighbors</h1>
+
+    <div id="content">
+      <div id="create-neighborhood">
+        <form id="neighbor-form">
+          <label>Neighbor Name
+            <input type="text" id="name" name="name" placeholder="Name" />
+          </label>
+          <label>Notes for Neighbors
+         <input type="textarea" id="notes" name="notes" placeholder="Notes" />
+          </label>
+          <label>
+         <input type="submit" id="submitbtn" />
+          </label>
+        </form>
+     </div>
    
-    <div id='villager-list' class='container' style="width: 18rem;">
-      <div class='row'>
+          <div id='villager-list' class='container'>
+            <div class='row'>
         
-      <div id='col' class="col-sm"></div>
-      </div>
-      <button id="back"><=</button>
-    <button id="forward">=></button>
+              <div id='col' class="col-sm"></div>
+             </div>
+
+          </div>
+         
+          <div class="buttons">
+            <button id="back"><=</button>
+            <button id="forward">=></button>
+          </div>
+
     </div>
   </body>
 </html>
