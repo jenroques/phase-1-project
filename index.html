@@ -11,29 +11,28 @@
     <h1>ACNH Neighbors</h1>
 
     <div id="content">
-      <div id="create-neighborhood">
-        <form id="neighbor-form">
+      
+      
+      <div class="create-neighbor">
+          <h3>Create your Neighborhood!</h3>
+      </div>
+        <div class="col-big">
           <label>Neighbor Name
-            <input type="text" id="name" name="name" placeholder="Name" />
+          <input type="text" id="addInput" placeholder="Name">
           </label>
-          <label>Notes for Neighbors
-         <input type="textarea" id="notes" name="notes" placeholder="Notes" />
-          </label>
-          <label>
-         <input type="submit" id="submitbtn" />
-          </label>
-        </form>
-     </div>
-   
-          <div id='villager-list' class='container'>
-            <div class='row'>
-              <ul>
-                <li class="like">Like! <span class="like-glyph">&#x2661;</span></li>
-              </ul>
-              <div id='col' class="col-sm"></div>
-             </div>
+        </div>
+        <div class="col">
+          <button type="button" id="addBtn" class="btn-primary">Add Neighbor</button>
+        </div>
+      
 
-          </div>
+      <div class="container">
+        <div id='villager-list' class='container'>
+            <div class='row'>
+              <div id='col' class="col-sm"></div>
+            </div>
+ 
+        </div>
          
           <div class="buttons">
             <button id="back"><=</button>

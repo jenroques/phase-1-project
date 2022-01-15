@@ -4,7 +4,9 @@ window.addEventListener('DOMContentLoaded', (e) => {
     const villagerContainer = document.getElementById('villager-list');
     const forwardButton = document.getElementById('forward');
     const backButton = document.getElementById('back');
-
+    const addBtn = document.querySelector('#addBtn')
+    const divList = document.getElementById('listholder')
+    const addInput = document.querySelector('#addInput')
     let currentPage = 1
 
 // Event Listeners 
@@ -23,12 +25,20 @@ backButton.addEventListener("click", () => {
 })
 
 
+addBtn.addEventListener("click", () => {
+    console.log("click")
+    const ul = divList.getElementById('nameList');
+    const li = document.createElement('li');
+    li.innerHTML = addInput.value 
+    ul.appendChild('li');
+});
+
 
 
 //Fetch Functions 
 
 function getAllVillagers(page) {
-    fetch(`http://localhost:3000/villagers/?_limit=5&_page=${page}`)
+    fetch(`http://localhost:3000/villagers/?_limit=3&_page=${page}`)
     .then(res => res.json())
     .then(renderAllVillagers)
 }
