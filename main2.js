@@ -4,9 +4,9 @@ window.addEventListener('DOMContentLoaded', (e) => {
     const villagerContainer = document.getElementById('villager-list');
     const forwardButton = document.getElementById('forward');
     const backButton = document.getElementById('back');
-    const addBtn = document.querySelector('#addBtn')
-    const divList = document.getElementById('listholder')
-    const addInput = document.querySelector('#addInput')
+    const addBtnName = document.getElementById('addBtn')
+    const divListName = document.getElementById('istNames')
+    const addNameInput = document.getElementById('addName')
     let currentPage = 1
 
 // Event Listeners 
@@ -25,7 +25,7 @@ backButton.addEventListener("click", () => {
 })
 
 
-addBtn.addEventListener("click", () => {
+addBtnName.addEventListener("click", () => {
     console.log("click")
     const ul = divList.getElementById('nameList');
     const li = document.createElement('li');

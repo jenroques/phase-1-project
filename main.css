@@ -33,11 +33,8 @@ input {
     display: block;
 }
 
-.col-big {
-  width: 40%; 
-  margin-top: 30px;
-  float: right;
-  display: block;
+div.col-notes {
+  margin-top: 150px;
 }
 
 textarea {

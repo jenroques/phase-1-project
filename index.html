@@ -15,16 +15,35 @@
       
       <div class="create-neighbor">
           <h3>Create your Neighborhood!</h3>
-      </div>
-        <div class="col-big">
-          <label>Neighbor Name
-          <input type="text" id="addInput" placeholder="Name">
-          </label>
+        <div class="name-form"></div>
+          <div class="col-name">
+            <label>Neighbor Name
+            <input type="text" id="addName" placeholder="Name">
+           </label>
+          </div>
+          <div class="col">
+            <button type="button" id="addBtn" class="btn-addName">Add Neighbor</button>
+          </div>
+          <div class="listNames" id="listNames">
+            <ul class="listNa">
+            </ul>
+          </div>
         </div>
-        <div class="col">
-          <button type="button" id="addBtn" class="btn-primary">Add Neighbor</button>
+        <div class="note-form">
+          <div class="col-notes">
+           <label class="notes">Neighbor Notes
+           <input type="textarea" id="addNotes" placeholder="Notes for Neighbor">
+           </label>
+          </div>
+           <div class="col">
+             <button type="button" id="addBtnNote" class="btn-addNote">Add Notes</button>
+           </div>
+           <div class="listNotes">
+            <ul class="listNo">
+            </ul>
+          </div>
+          </div>
         </div>
-      
 
       <div class="container">
         <div id='villager-list' class='container'>
