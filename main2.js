@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
     const forwardButton = document.getElementById('forward');
     const backButton = document.getElementById('back');
     const addBtnName = document.getElementById('addBtn')
-    const divListName = document.getElementById('istNames')
+    const divListName = document.getElementById('listNames')
     const addNameInput = document.getElementById('addName')
     let currentPage = 1
 
@@ -27,7 +27,7 @@ backButton.addEventListener("click", () => {
 
 addBtnName.addEventListener("click", () => {
     console.log("click")
-    const ul = divList.getElementById('nameList');
+    const ul = divListName.getElementById('nameList');
     const li = document.createElement('li');
     li.innerHTML = addInput.value 
     ul.appendChild('li');
