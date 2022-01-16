@@ -4,12 +4,35 @@ window.addEventListener('DOMContentLoaded', (e) => {
     const villagerContainer = document.getElementById('villager-list');
     const forwardButton = document.getElementById('forward');
     const backButton = document.getElementById('back');
-    const addBtnName = document.getElementById('addBtn')
-    const divListName = document.getElementById('listNames')
-    const addNameInput = document.getElementById('addName')
+    const addBtnName = document.getElementById('addBtn');
+    const formAddName = document.getElementById('addName');
+    const addNameInput = document.getElementById('nameInput');
+    const nameList = document.getElementById('listNames');
+    const dropdownNames = document.getElementById('movedIn');
     let currentPage = 1
 
+
+
+const addNamesList = (inputValue) => {
+    let li = document.createElement("li")
+    li.innerHTML = inputValue;
+    let deleteButton = document.createElement("button");
+    deleteButton.innerHTML = "X";
+    deleteButton.className = "delete-btn";
+    li.appendChild.apply(deleteButton);
+    nameList.appendChild(li);
+    li.style.color = color;
+    nameList.reset();
+}
+
 // Event Listeners 
+
+document.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let userInput = addNameInput.ariaValueMax;
+    let movedIn = dropdown.
+})
+
 
 forwardButton.addEventListener("click", () => {
     currentPage++
@@ -23,17 +46,6 @@ backButton.addEventListener("click", () => {
     getAllVillagers(currentPage)
     }
 })
-
-
-addBtnName.addEventListener("click", () => {
-    console.log("click")
-    const ul = divListName.getElementById('nameList');
-    const li = document.createElement('li');
-    li.innerHTML = addInput.value 
-    ul.appendChild('li');
-});
-
-
 
 //Fetch Functions 
 

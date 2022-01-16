@@ -1,24 +1,34 @@
 
 body {
-    color: #bdf0f3 ;
+   background-color: #bdf0f3 ;
 }
   
 #content { 
     overflow: auto; 
     width: 600px;
-    background: #81f1f7; 
+    background: #bdf0f3; 
     margin: auto;
+    display: center;
 } 
+
+#logo {
+  position: relative;
+  width: 30%;
+  height: 30%;
+  margin-left: 35%;
+  margin-top: 45px;
+}
+
 
 label, input {
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #28735a;
+    color: #45836e;
 }
 
 label {
     margin-bottom: 10px;
-    color: #28735a;
+    color: #45836e;
 }
 
 input {
@@ -29,71 +39,278 @@ input {
 .create-neighbor {
     width: 40%; 
     margin-top: 30px;
+    position: relative;
     float: right;
     display: block;
 }
 
-div.col-notes {
-  margin-top: 150px;
+.col-name {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 100%;
+  margin: 5px;
+  padding: 1em;
+  float: right;
+  display: block;
+  background: #ebd3b1;
 }
 
-textarea {
-  width: 300px;
-  height: 150px;
+#addName {
+  position: relative;
+  padding: 30px 20px;
+}
+
+#addName input{
+  width: 75%;
+  height: 10px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+  outline: none;
+  border-color: #fff563;
+  margin: 5px;
+}
+
+#addName button{
+  position: relative;
+  height: 30px;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #9dffb0;
+  border: none;
+  color:  #45836e ;
+  cursor: pointer;
+  outline: none;
+}
+
+#listNames {
+  background-color: #ebd3b1;
+  padding: 30px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 80%;
+  position: relative;
+}
+
+.listName {
+  background-color: #c5e1e6;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #939697;
+  cursor: pointer;
+}
+.listName span{
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.task button{
+  background-color: #0a2ea4;
+  color: #ffffff;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.col-notes {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 150%;
+  margin: 5px;
+  padding: 1em;
+  float: right;
+  display: block;
+  background: #ebd3b1;
+}
+
+#addNotes {
+  position: relative;
+  padding: 30px 20px;
+}
+
+#addNotes input{
+  width: 75%;
+  height: 10px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+  outline: none;
+  border-color: #fff563;
+  margin: 5px;
+}
+
+#addNotes button{
+  position: relative;
+  height: 30px;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #9dffb0;
+  border: none;
+  color:  #45836e ;
+  cursor: pointer;
+  outline: none;
+}
+
+#listNotes {
+  background-color: #ebd3b1;
+  padding: 30px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 80%;
+  position: relative;
+}
+
+.listNote {
+  background-color: #c5e1e6;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #939697;
+  cursor: pointer;
+}
+.listNote span{
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+} 
+
+.task button{
+  background-color: #0a2ea4;
+  color: #ffffff;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 h1
 {
   text-align: center;
-  font-family: Verdana;
-  color: #28735a ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #45836e ;
+  margin-top: 20px;
 }
 
 h2
 {
   text-align: center;
   font-family: Verdana;
-  color: #28735a;
+  color: #45836e;
+  position: relative;
 }
 
-h3 {
+.create-neighbor h3 {
   text-align: center;
   font-family: Verdana;
-  color: #28735a ;
+  color: #45836e;
+  position: relative;
+  
+}
+
+#villager-list h3 {
+  text-align: center;
+  font-family: Verdana;
+  color: #45836e;
+  width: 190px;
+  margin-left: 45%;
 } 
 
-h4 {
+#villager-list h4 {
   text-align: center;
   font-family: Verdana;
   font-weight: 200;
-  color: #28735a ;
+  color: #45836e;
+  width: 190px;
+  margin-left: 40%;
+  margin-top: 5px;
 }
 
 div.container img {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-  width: 60%;
+  border-radius: 5px; 
   margin: 5px;
   padding: 1em;
   float: left;
   display: block;
+  
+  background: #ebd3b1;
 }
 
-/* Add rounded corners to the top left and the top right corner of the image */
 div.container {
   border-radius: 5px 5px 0 0;
-  width: 40%;
+  width: 15%;
+  height: 15%;
   margin: 5px;
   padding: 1em;
   float: left;
   display: block;
+  position: relative;
 }
 
-.buttons {
-  position:relative;
-  left: 50%;
-  margin-top: 300%;
+.buttons #back {
+  position: relative ;
+  left: 20%;
+  margin-top: 10%;
+  height: 30px;
+  width: 40px;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #fff563;
+  border: none;
+  color:  #45836e ;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons #forward {
+  position: relative ;
+  left: 20%;
+  margin-top: 10%;
+  height: 30px;
+  width: 40px;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #fff563;
+  border: none;
+  color:  #45836e ;
+  cursor: pointer;
+  outline: none;
 }
 
 

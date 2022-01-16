@@ -8,55 +8,66 @@
 
   </head>
   <body>
-    <h1>ACNH Neighbors</h1>
-
+  
+  <img src="images/Logo.png" alt="ACNH Logo" id="logo"/>
+   <h1>Neighbors</h1>
     <div id="content">
       
       
       <div class="create-neighbor">
-          <h3>Create your Neighborhood!</h3>
+          
         
           <div class="col-name">
-            <label>Neighbor Name
-            <input type="text" id="addName" placeholder="Name">
-           </label>
-          </div>
-          <div class="col">
-            <button type="button" id="addBtn" class="btn-addName">Add Neighbor</button>
-          </div>
-          <div class="listNames" id="listNames">
-            <ul class="listNa">
-            </ul>
-          </div>
+            <h3>Create your Neighborhood!</h3>
+            <form id="addName">
+              <label>Neighbor Name
+             
+                <input type="text" placeholder="Name" id="nameInput">
+                
+                <select name="" id="movedIn">
+                  <option value="Resident">Moved In</option>
+                  <option value="NonResident">Not Moved In</option>
+                </select>
+                <input type="submit" id="addSubmit" class="btn-submitName" value="Add Neighbor">
+
+              
+              </label>
+
+                <div id="listNames">
+                  <ul id="names">
+                  </ul>  
+                </div> 
+            </form>
+           
+
+            
        
         
-          <div class="col-notes">
-           <label class="notes">Neighbor Notes
-           <input type="textarea" id="addNotes" placeholder="Notes for Neighbor">
-           </label>
+         
+            
+            <form id="addNotes">
+              <label>Neighbor Notes
+              <input type="text" placeholder="Notes">
+              <button type="button" id="addNewNote" class="btn-addNotes">Add Notes</button>
+            </label>
+            <div id="listNotes"></div>
+          </form>
+
           </div>
-           <div class="col">
-             <button type="button" id="addBtnNote" class="btn-addNote">Add Notes</button>
-           </div>
-           <div class="listNotes">
-            <ul class="listNo">
-            </ul>
-          </div>
+
       </div>     
        
 
       <div class="container">
-        <div id='villager-list' class='container'>
-            <div class='row'>
-              <div id='col' class="col-sm"></div>
-            </div>
- 
-        </div>
-         
-          <div class="buttons">
+        <div id='villager-list'> </div>           
+        
+        <div class="buttons" id="buttons">
             <button id="back"><=</button>
             <button id="forward">=></button>
-          </div>
+        </div>
+      </div>
+         
+          
 
     </div>
   </body>
