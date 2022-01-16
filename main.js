@@ -1,3 +1,9 @@
+
+//DO NOT USE - BROKEN CODE - FOR REFERENCE ONLY
+
+
+
+
 /*window.addEventListener('DOMContentLoaded', (e) => {
     const villagerContainer = document.getElementById('villager-list');
     const neighborForm = document.getElementById('neighbor-form');
@@ -70,4 +76,5 @@
 
 
 
-})
+}) 
+*/
