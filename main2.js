@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', (e) => {
     const formAddName = document.getElementById('addName');
     const addNameInput = document.getElementById('nameInput');
     const nameList = document.getElementById('listNames');
-    const dropdownNames = document.getElementById('movedIn');
     let currentPage = 1
 
 
