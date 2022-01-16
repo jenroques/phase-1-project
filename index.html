@@ -5,7 +5,7 @@
     <title>ACNH Neighbors</title>
   <script src='main2.js'></script>
   <link rel="stylesheet" href="main.css">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   </head>
   <body>
   
@@ -14,56 +14,46 @@
     <div id="content">
       
       
-      <div class="create-neighbor">
+      <div class="create-neighborhood">
           
-        
+        <h3>Create your Neighborhood!</h3>
           <div class="col-name">
-            <h3>Create your Neighborhood!</h3>
-            <form id="addName">
-              <label>Neighbor Name
-             
-                <input type="text" placeholder="Name" id="nameInput">
-                
-                <select name="" id="movedIn">
-                  <option value="Resident">Moved In</option>
-                  <option value="NonResident">Not Moved In</option>
-                </select>
-                <input type="submit" id="addSubmit" class="btn-submitName" value="Add Neighbor">
-
+          <label>Neighbor Name </label>
+            <form>
+              <input type="text" placeholder="Name" class="name_input" />
+              <button class="name_button" type="submit">Add Neighbor</button>       
               
-              </label>
-
-                <div id="listNames">
-                  <ul id="names">
-                  </ul>  
-                </div> 
             </form>
-           
+            <div class="name_container">
+              <ul class="name_list"></ul>
+            </div>
+          </label>  
+          
 
-            
-       
-        
          
-            
-            <form id="addNotes">
-              <label>Neighbor Notes
-              <input type="text" placeholder="Notes">
-              <button type="button" id="addNewNote" class="btn-addNotes">Add Notes</button>
-            </label>
-            <div id="listNotes"></div>
-          </form>
-
+          
+          <label>Neighbor Notes </label>
+            <form>
+              <input type="textarea" placeholder="Notes" class="note_input" />
+              <button class="note_button" type="submit">Add Notes</button>       
+              
+            </form>
+            <div class="name_container">
+              <ul class="note_list"></ul>
+            </div>
+          </label>  
           </div>
 
-      </div>     
-       
+      </div>  
+         
+      
 
       <div class="container">
         <div id='villager-list'> </div>           
         
         <div class="buttons" id="buttons">
-            <button id="back"><=</button>
-            <button id="forward">=></button>
+            <button id="back">Back</button>
+            <button id="forward">Next</button>
         </div>
       </div>
          

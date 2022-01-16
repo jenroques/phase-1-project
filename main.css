@@ -36,7 +36,7 @@ input {
     margin-bottom: 10px;
 }
 
-.create-neighbor {
+.create-neighborhood {
     width: 40%; 
     margin-top: 30px;
     position: relative;
@@ -64,7 +64,7 @@ input {
 #addName input{
   width: 75%;
   height: 10px;
-  font-family: 'Poppins',sans-serif;
+  font-family: Ubuntu, serif;
   font-size: 15px;
   border: 2px solid #d1d3d4;
   padding: 12px;
@@ -81,7 +81,7 @@ input {
   position: relative;
   height: 30px;
   border-radius: 5px;
-  font-family: 'Poppins',sans-serif;
+  font-family: Ubuntu, serif;
   font-weight: 500;
   font-size: 16px;
   background-color: #9dffb0;
@@ -113,7 +113,7 @@ input {
   cursor: pointer;
 }
 .listName span{
-  font-family: 'Poppins',sans-serif;
+  font-family: Ubuntu, serif;
   font-size: 15px;
   font-weight: 400;
 }
@@ -149,7 +149,7 @@ input {
 #addNotes input{
   width: 75%;
   height: 10px;
-  font-family: 'Poppins',sans-serif;
+  font-family: Ubuntu, serif;
   font-size: 15px;
   border: 2px solid #d1d3d4;
   padding: 12px;
@@ -166,7 +166,7 @@ input {
   position: relative;
   height: 30px;
   border-radius: 5px;
-  font-family: 'Poppins',sans-serif;
+  font-family: Ubuntu, serif;
   font-weight: 500;
   font-size: 16px;
   background-color: #9dffb0;
@@ -198,7 +198,7 @@ input {
   cursor: pointer;
 }
 .listNote span{
-  font-family: 'Poppins',sans-serif;
+  font-family: Ubuntu, serif;
   font-size: 15px;
   font-weight: 400;
 } 
@@ -217,7 +217,7 @@ input {
 h1
 {
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Ubuntu, serif;
   color: #45836e ;
   margin-top: 20px;
 }
@@ -225,14 +225,14 @@ h1
 h2
 {
   text-align: center;
-  font-family: Verdana;
+  font-family: Ubuntu, serif;
   color: #45836e;
   position: relative;
 }
 
-.create-neighbor h3 {
+.create-neighborhood h3 {
   text-align: center;
-  font-family: Verdana;
+  font-family: Ubuntu, serif;
   color: #45836e;
   position: relative;
   
@@ -240,7 +240,7 @@ h2
 
 #villager-list h3 {
   text-align: center;
-  font-family: Verdana;
+  font-family: Ubuntu, serif;
   color: #45836e;
   width: 190px;
   margin-left: 45%;
@@ -248,7 +248,7 @@ h2
 
 #villager-list h4 {
   text-align: center;
-  font-family: Verdana;
+  font-family: Ubuntu, serif;
   font-weight: 200;
   color: #45836e;
   width: 190px;
@@ -280,13 +280,12 @@ div.container {
 }
 
 .buttons #back {
-  position: relative ;
-  left: 20%;
+  left: 30%;
   margin-top: 10%;
   height: 30px;
-  width: 40px;
+  width: 50px;
   border-radius: 5px;
-  font-family: 'Poppins',sans-serif;
+  font-family: Ubuntu, serif;
   font-weight: 500;
   font-size: 16px;
   background-color: #fff563;
@@ -297,13 +296,12 @@ div.container {
 }
 
 .buttons #forward {
-  position: relative ;
-  left: 20%;
+  left: 30%;
   margin-top: 10%;
   height: 30px;
-  width: 40px;
+  width: 50px;
   border-radius: 5px;
-  font-family: 'Poppins',sans-serif;
+  font-family: Ubuntu, serif;
   font-weight: 500;
   font-size: 16px;
   background-color: #fff563;

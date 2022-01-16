@@ -4,34 +4,90 @@ window.addEventListener('DOMContentLoaded', (e) => {
     const villagerContainer = document.getElementById('villager-list');
     const forwardButton = document.getElementById('forward');
     const backButton = document.getElementById('back');
-    const addBtnName = document.getElementById('addBtn');
-    const formAddName = document.getElementById('addName');
-    const addNameInput = document.getElementById('nameInput');
-    const nameList = document.getElementById('listNames');
+    
     let currentPage = 1
 
 
+const nameInput = document.querySelector('.name_input');
+const nameButton = document.querySelector('.name_button');
+const nameList = document.querySelector('.name_list');
 
-const addNamesList = (inputValue) => {
-    let li = document.createElement("li")
-    li.innerHTML = inputValue;
-    let deleteButton = document.createElement("button");
-    deleteButton.innerHTML = "X";
-    deleteButton.className = "delete-btn";
-    li.appendChild.apply(deleteButton);
-    nameList.appendChild(li);
-    li.style.color = color;
-    nameList.reset();
+//event listeners
+nameButton.addEventListener("click", addName)
+nameList.addEventListener("click", deleteName)
+
+
+function addName(event) {
+    event.preventDefault();
+    
+    const nameDiv = document.createElement('div');
+    nameDiv.classList.add('name');
+   
+    const newName = document.createElement('li');
+    newName.innerText = nameInput.value;
+    newName.classList.add('name_item');
+    nameDiv.appendChild(newName);
+    if(nameInput.value === ""){
+        alert("Please enter a Name");
+        return null
+    }
+    
+    const deleteButton = document.createElement('button');
+    deleteButton.innerHTML = 'X';
+    deleteButton.classList.add('delete_btn')
+    nameDiv.appendChild(deleteButton);
+    nameList.appendChild(nameDiv);
+    nameInput.value = ""
 }
 
-// Event Listeners 
+function deleteName(e) {
+    const item = e.target;
+    if (item.classList[0] === "delete_btn") {
+        const nameDel = item.parentElement;
+        nameDel.addEventListener("click", function () {
+            nameDel.remove()
+        })
+    }
+}
 
-document.addEventListener('submit', (e) => {
-    e.preventDefault();
-    let userInput = addNameInput.ariaValueMax;
-    let movedIn = dropdown.
-})
+const noteInput = document.querySelector('.note_input');
+const noteButton = document.querySelector('.note_button');
+const noteList = document.querySelector('.note_list');
 
+noteButton.addEventListener("click", addNote)
+noteList.addEventListener("click", deleteNote)
+
+
+function addNote(event) {
+    event.preventDefault();
+    const noteDiv = document.createElement('div');
+    noteDiv.classList.add('name');
+    const newNote = document.createElement('li');
+    newNote.innerText = noteInput.value;
+    newNote.classList.add('name_item');
+    noteDiv.appendChild(newNote);
+    if(noteInput.value === ""){
+        alert("Please enter some notes!");
+        return null
+    }
+    const deleteNoteButton = document.createElement('button');
+    deleteNoteButton.innerHTML = 'X';
+    deleteNoteButton.classList.add('delete_note_btn')
+    noteDiv.appendChild(deleteNoteButton);
+    noteList.appendChild(noteDiv);
+    noteInput.value = ""
+}
+
+function deleteNote(e) {
+    const item = e.target;
+   
+    if (item.classList[0] === "delete_note_btn") {
+        const noteDel= item.parentElement;
+        noteDel.addEventListener("click", function () {
+            noteDel.remove()
+        })
+    }
+}
 
 forwardButton.addEventListener("click", () => {
     currentPage++
@@ -49,7 +105,7 @@ backButton.addEventListener("click", () => {
 //Fetch Functions 
 
 function getAllVillagers(page) {
-    fetch(`http://localhost:3000/villagers/?_limit=3&_page=${page}`)
+    fetch(`http://localhost:3000/villagers/?_limit=2&_page=${page}`)
     .then(res => res.json())
     .then(renderAllVillagers)
 }
@@ -77,5 +133,4 @@ function renderVillager(villager) {
 
   villagerContainer.append(villagerDiv)
 }
-
-});
+})
