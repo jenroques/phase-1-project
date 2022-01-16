@@ -1,18 +1,18 @@
 // DOM Elements 
 window.addEventListener('DOMContentLoaded', (e) => {
 
-    const villagerContainer = document.getElementById('villager-list');
-    const forwardButton = document.getElementById('forward');
-    const backButton = document.getElementById('back');
+const villagerContainer = document.getElementById('villager-list');
+const forwardButton = document.getElementById('forward');
+const backButton = document.getElementById('back');
     
-    let currentPage = 1
+let currentPage = 1
 
 
 const nameInput = document.querySelector('.name_input');
 const nameButton = document.querySelector('.name_button');
 const nameList = document.querySelector('.name_list');
 
-//event listeners
+//Event listeners
 nameButton.addEventListener("click", addName)
 nameList.addEventListener("click", deleteName)
 
@@ -33,7 +33,7 @@ function addName(event) {
     }
     
     const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = 'X';
+    deleteButton.innerHTML = 'Delete';
     deleteButton.classList.add('delete_btn')
     nameDiv.appendChild(deleteButton);
     nameList.appendChild(nameDiv);
@@ -54,6 +54,7 @@ const noteInput = document.querySelector('.note_input');
 const noteButton = document.querySelector('.note_button');
 const noteList = document.querySelector('.note_list');
 
+//Event listeners
 noteButton.addEventListener("click", addNote)
 noteList.addEventListener("click", deleteNote)
 
@@ -71,7 +72,7 @@ function addNote(event) {
         return null
     }
     const deleteNoteButton = document.createElement('button');
-    deleteNoteButton.innerHTML = 'X';
+    deleteNoteButton.innerHTML = 'Delete';
     deleteNoteButton.classList.add('delete_note_btn')
     noteDiv.appendChild(deleteNoteButton);
     noteList.appendChild(noteDiv);
@@ -89,6 +90,7 @@ function deleteNote(e) {
     }
 }
 
+//Event listeners
 forwardButton.addEventListener("click", () => {
     currentPage++
     getAllVillagers(currentPage)

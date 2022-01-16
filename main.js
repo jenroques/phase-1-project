@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', (e) => {
+/*window.addEventListener('DOMContentLoaded', (e) => {
     const villagerContainer = document.getElementById('villager-list');
     const neighborForm = document.getElementById('neighbor-form');
     const backButton = document.getElementById('back');
@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
     function renderVillagers(villagers) {
         const villagerDiv = document.createElement("div")
         villagerDiv.innerHTML = `
-        <img src="${villagers.image_uri}">
+       <!-- <img src="${villagers.image_uri}">
         <h3>${villagers["name"]["name-USen"]}</h3>
         <h4>${villagers.saying}</h4>
         <footer>
@@ -70,4 +70,4 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
 
 
-});
+})
