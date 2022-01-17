@@ -129,9 +129,12 @@ function renderVillager(villager) {
     const villagerDiv = document.createElement("div")
     villagerDiv.innerHTML = `
         <img src="${villager.image_uri}">
-        <h3>${villager["name"]["name-USen"]}</h3>
-        <h4>${villager["catch-phrase"]}</h4>
-        <h4>${villager.saying}</h4>
+        <h3>Name: ${villager["name"]["name-USen"]}</h3>
+        <h4>Catch-Phrase: ${villager["catch-phrase"]}</h4>
+        <p>Personality: ${villager["personality"]}</p>
+        <p>${villager.saying}</p>
+        
+
         `
 
   villagerContainer.append(villagerDiv)

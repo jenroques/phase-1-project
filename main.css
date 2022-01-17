@@ -185,6 +185,14 @@ h2
   
 }
 
+#villager-list p {
+  text-align: center;
+  font-family: Ubuntu, serif;
+  color: #45836e;
+  width: 190px;
+  margin-left: 45%;
+} 
+
 #villager-list h3 {
   text-align: center;
   font-family: Ubuntu, serif;
