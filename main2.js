@@ -107,7 +107,7 @@ backButton.addEventListener("click", () => {
 //Fetch Functions 
 
 function getAllVillagers(page) {
-    fetch(`http://localhost:3000/villagers/?_limit=2&_page=${page}`)
+    fetch(`http://localhost:3000/villagers/?_limit=1&_page=${page}`)
     .then(res => res.json())
     .then(renderAllVillagers)
 }
@@ -130,11 +130,9 @@ function renderVillager(villager) {
     villagerDiv.innerHTML = `
         <img src="${villager.image_uri}">
         <h3>Name: ${villager["name"]["name-USen"]}</h3>
-        <h4>Catch-Phrase: ${villager["catch-phrase"]}</h4>
-        <p>Personality: ${villager["personality"]}</p>
+        <h4>Catch-Phrase:   ${villager["catch-phrase"]}</h4>
+        <p>Personality:   ${villager["personality"]}</p>
         <p>${villager.saying}</p>
-        
-
         `
 
   villagerContainer.append(villagerDiv)
