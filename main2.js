@@ -130,6 +130,7 @@ function renderVillager(villager) {
     villagerDiv.innerHTML = `
         <img src="${villager.image_uri}">
         <h3>${villager["name"]["name-USen"]}</h3>
+        <h4>${villager["catch-phrase"]}</h4>
         <h4>${villager.saying}</h4>
         `
 
