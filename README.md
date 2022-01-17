@@ -30,7 +30,7 @@ This project was inspired by fans and participants of Animal Crossings: New Hori
 
 **Benefits for Younger Users** 
 - Practice typing skills via the "Name" and "Notes" input fields
-- Develope and practice mouse and tracking pad dexterity via various button clicks provided
+- Develop and practice mouse and tracking pad dexterity via various button clicks provided
 
 ## Technologies Used:
 This web app was made using: 
