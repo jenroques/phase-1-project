@@ -53,7 +53,7 @@ const noteInput = document.querySelector('.note_input');
 const noteButton = document.querySelector('.note_button');
 const noteList = document.querySelector('.note_list');
 
-//Event listeners
+
 noteButton.addEventListener("click", addNote)
 noteList.addEventListener("click", deleteNote)
 
