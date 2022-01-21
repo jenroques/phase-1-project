@@ -1,4 +1,3 @@
-// DOM Elements 
 window.addEventListener('DOMContentLoaded', (e) => {
 
 const villagerContainer = document.getElementById('villager-list');
@@ -12,7 +11,7 @@ const nameInput = document.querySelector('.name_input');
 const nameButton = document.querySelector('.name_button');
 const nameList = document.querySelector('.name_list');
 
-//Event listeners
+
 nameButton.addEventListener("click", addName)
 nameList.addEventListener("click", deleteName)
 
@@ -90,7 +89,7 @@ function deleteNote(e) {
     }
 }
 
-//Event listeners
+
 forwardButton.addEventListener("click", () => {
     currentPage++
     getAllVillagers(currentPage)
@@ -104,7 +103,7 @@ backButton.addEventListener("click", () => {
     }
 })
 
-//Fetch Functions 
+
 
 function getAllVillagers(page) {
     fetch(`http://localhost:3000/villagers/?_limit=1&_page=${page}`)
@@ -113,10 +112,10 @@ function getAllVillagers(page) {
 }
 
 
-//Initial Fetch & Render 
+
 getAllVillagers(currentPage)
 
-//Render Helpers
+
 
 function renderAllVillagers(villagers) {
     villagerContainer.innerHTML = ""
@@ -125,7 +124,7 @@ function renderAllVillagers(villagers) {
 
 
 function renderVillager(villager) {
-    console.log(villager)
+    
     const villagerDiv = document.createElement("div")
     villagerDiv.innerHTML = `
         <img src="${villager.image_uri}">
