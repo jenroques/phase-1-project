@@ -12,8 +12,8 @@ This project was inspired by fans and participants of Animal Crossings: New Hori
 - Can delete notes and names if desired. 
 
 ## Installing JSON Server:
-- Open terminal and install JSON Server globally by entering the following command: npm install -g json-server
-- Start JSON Server: json-server --watch db.json
+- Open terminal and install JSON Server globally by entering the following command: ***npm install -g json-server***
+- Start JSON Server: ***json-server --watch db.json***
 - Server will run on http://localhost:3000 
 
 ## Basics:
