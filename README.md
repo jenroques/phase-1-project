@@ -11,7 +11,12 @@ This project was inspired by fans and participants of Animal Crossings: New Hori
 - Can make notes regarding villagers added to name list, or general notes. 
 - Can delete notes and names if desired. 
 
-## How to Use:
+## Installing JSON Server:
+- Open terminal and install JSON Server globally by entering the following command: npm install -g json-server
+- Start JSON Server: json-server --watch db.json
+- Server will run on http://localhost:3000 
+
+## Basics:
 1. ***To add names to your neighbor list, enter your information under the "Neighbor Notes" label, in the "Name" field, and click the "Add Neighbor" button.***
 
 <img src="/names.png" width="25%" height="25%">
